@@ -193,7 +193,6 @@ select {
   margin-left: calc(var(--grid-gutter-x) * 0.5 * -1);
   margin-right: calc(var(--grid-gutter-x) * 0.5 * -1);
 }
-
 .row > * {
   margin-top: var(--grid-gutter-y);
 }
@@ -1220,12 +1219,12 @@ html.dark {
   --top-menu-border-color: #171c28;
   --menu-column-icon-color:brightness(0) saturate(100%) invert(93%) sepia(7%) saturate(1256%) hue-rotate(194deg) brightness(108%) contrast(95%);
 }
-
 @media (max-width: 991.98px) {
   html.dark {
     --header-shadown-color:rgba(0,0,0,0.20);
   }
 }
+
 html {
   --text-color: #1a162a;
   ---icon-color: brightness(0) saturate(100%) invert(8%) sepia(14%)
@@ -1239,13 +1238,13 @@ html {
   --dropdown-shadown-color: rgba(200, 200, 200, 0.4);
   --top-menu-border-color: #d2d1d6;
 }
-
 @media (max-width: 991.98px) {
   html {
     --header-bg-color: #fff;
     --header-shadown-color: rgba(237, 237, 246, 0.2);
   }
 }
+
 .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
@@ -1254,17 +1253,16 @@ html {
 .header {
   background: var(--header-bg-color);
 }
-
 @media (max-width: 991.98px) {
   .header {
     box-shadow: 0px 20px 60px 10px var(--header-shadown-color);
   }
 }
+
 .top-bar {
   position: relative;
   padding: 30px 0;
 }
-
 @media (max-width: 991.98px) {
   .top-bar {
     padding: 20px 0;
@@ -1279,16 +1277,15 @@ html {
 .top-bar__more {
   display: none;
 }
-
 @media (max-width: 991.98px) {
   .top-bar__more {
     display: block;
   }
 }
+
 .navbar {
   margin-left: 129px;
 }
-
 @media (max-width: 1199.98px) {
   .navbar {
     margin-left: 28px;
@@ -1307,7 +1304,6 @@ html {
 .navbar__item:hover .dropdown {
   display: block;
 }
-
 .navbar__link {
   gap: 6px;
   height: 50px;
@@ -1316,7 +1312,6 @@ html {
   line-height: 1.47;
   padding: 0 15px;
 }
-
 .navbar__arrow {
   margin-top: 3px;
 }
@@ -1325,7 +1320,6 @@ html {
   gap: 20px;
   margin-left: auto;
 }
-
 @media (max-width: 767.98px) {
   .top-act {
     margin-left: 0;
@@ -1337,7 +1331,6 @@ html {
   background: var(--top-act-group-bg-color);
   box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
 }
-
 @media (max-width: 767.98px) {
   .top-act__group {
     display: none;
@@ -1351,7 +1344,6 @@ html {
 .top-act__group--single .top-act__btn {
   padding: 13px;
 }
-
 .top-act__btn {
   display: flex;
   align-items: center;
@@ -1359,19 +1351,16 @@ html {
   padding: 13px 20px;
   cursor: pointer;
 }
-
 .top-act__title {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 146.667%;
 }
-
 .top-act__separate {
   width: 1px;
   height: 30px;
   background: var(--top-act-group-separate);
 }
-
 .top-act__avatar {
   display: block;
   width: 50px;
@@ -1385,7 +1374,6 @@ html {
   align-items: center;
   gap: 14px;
 }
-
 @media (max-width: 991.98px) {
   .logo {
     gap: 10px;
@@ -1402,7 +1390,6 @@ html {
   font-size: 2.2rem;
   line-height: 1.46;
 }
-
 @media (max-width: 991.98px) {
   .logo__title {
     font-size: 1.8rem;
@@ -1413,13 +1400,13 @@ html {
     width: 24px;
   }
 }
+
 .dropdown {
   position: absolute;
   left: 0;
   width: min(1240px, 100%);
   padding-top: 50px;
 }
-
 .dropdown__inner {
   --inner-padding: 30px;
   position: relative;
@@ -1428,7 +1415,6 @@ html {
   background: var(--dropdown-bg-color);
   box-shadow: 0px 40px 90px 20px var(--dropdown-shadown-color);
 }
-
 .dropdown__inner::before {
   content: url("../icon/dropdown.svg");
   position: absolute;
@@ -1442,7 +1428,6 @@ html {
   position: relative;
   --main-column-width: 292px;
 }
-
 .top-menu__main {
   width: var(--main-column-width);
   max-height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
@@ -1454,27 +1439,22 @@ html {
   display: flex;
   gap: 14px;
 }
-
 .menu-column__icon {
   flex-shrink: 0;
   width: 36px;
   height: 36px;
   position: relative;
 }
-
 .menu-column__content {
   flex: 1;
 }
-
 .menu-column__icon-1, .menu-column__icon-2 {
   object-fit: cover;
 }
-
 .menu-column__icon-1 {
   width: 30px;
   height: 30px;
 }
-
 .menu-column__icon-2 {
   position: absolute;
   bottom: 0;
@@ -1483,25 +1463,21 @@ html {
   height: 24px;
   filter: var(--menu-column-icon-color);
 }
-
 .menu-column__heading {
   margin-top: 4px;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 150%;
 }
-
 .menu-column__list {
   margin-top: 19px;
 }
-
 .menu-column__link {
   display: block;
   padding: 7px 0;
   font-size: 1.4rem;
   line-height: 142.875%;
 }
-
 .menu-column__link:hover {
   color: #0071dc;
   font-weight: 500;
@@ -1512,7 +1488,5 @@ html {
   position: absolute;
   inset: 0 0 0 var(--main-column-width);
 }
-
-
 
 /*# sourceMappingURL=main.css.map */
